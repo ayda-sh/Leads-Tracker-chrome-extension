@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+     min-width: 400px;
+}
+
+.lead-tracker input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d34eff59;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.lead-tracker button {
+    background: #d34eff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.lead-tracker #delete-btn {
+     background: #fff;
+     color: red;
+     border: 1px solid red;
+     border-radius: 5px;
+}
+
+.lead-tracker ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.lead-tracker li {
+    margin-top: 5px;
+    background: #f3f3f3b0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.lead-tracker li a {
+    color: #c73aff;
+}
