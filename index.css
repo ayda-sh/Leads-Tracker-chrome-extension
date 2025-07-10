@@ -42,8 +42,15 @@ body {
     background: #f3f3f3b0;
     padding: 8px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lead-tracker li a {
     color: #c73aff;
+}
+
+.lead-tracker li #delete-item {
+    background-color: transparent;
 }

@@ -6,6 +6,7 @@ const deleteBtn = document.getElementById("delete-btn");
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 const tabBtn = document.getElementById("tab-btn");
 
+
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
   render(myLeads);
@@ -35,6 +36,7 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
+                <button id="delete-item" onclick="deleteItem(${i})">❌</button>
             </li>
         `;
   }
@@ -46,3 +48,9 @@ deleteBtn.addEventListener("dblclick", function () {
   myLeads = [];
   render(myLeads);
 });
+
+function deleteItem(index) {
+    myLeads.splice(index, 1);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+}
