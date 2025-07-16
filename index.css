@@ -10,10 +10,10 @@ body {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  /* border: 1px solid #d34eff59; */
+  border: none;
   box-shadow: 0 2px 8px #758cff85;
   background: #f5f5fa;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   border-radius: 8px;
   outline: none;
 }
@@ -30,6 +30,7 @@ body {
   border: none;
   font-weight: bold;
   border-radius: 8px;
+  margin-right: 3px;
 }
 
 .lead-tracker #delete-btn {
@@ -67,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 7px !important;
 }
 
 .lead-link {
@@ -81,4 +83,18 @@ body {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #9f6ff6;
+  border-radius: 8px;
 }
