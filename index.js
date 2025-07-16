@@ -6,7 +6,6 @@ const deleteBtn = document.getElementById("delete-btn");
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 const tabBtn = document.getElementById("tab-btn");
 
-
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
   render(myLeads);
@@ -28,6 +27,13 @@ tabBtn.addEventListener("click", function(){
 })
 
 
+ulEl.addEventListener("click", function(e) {
+    if (e.target.closest(".delete-item-btn")) {
+        const index = parseInt(e.target.closest(".delete-item-btn").dataset.index);
+        deleteItem(index);
+    }
+});
+
 function render(leads) {
   let listItems = "";
   for (let i = 0; i < leads.length; i++) {
@@ -36,7 +42,9 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button id="delete-item" onclick="deleteItem(${i})">❌</button>
+                <button class="delete-item-btn" data-index="${i}">
+                    🗑
+                </button>
             </li>
         `;
   }

@@ -1,56 +1,63 @@
 body {
-    margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-     min-width: 400px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Poppins', Arial, sans-serif;
+  min-width: 380px;
+  background: rgba(60, 51, 119, 0.92);
 }
 
 .lead-tracker input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #d34eff59;
-    margin-bottom: 4px;
-    border-radius: 5px;
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid #d34eff59; */
+  box-shadow: 0 2px 8px #758cff85;
+  background: #f5f5fa;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  outline: none;
 }
 
 .lead-tracker button {
-    background: #d34eff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
+  background: linear-gradient(90deg, #62A2F7, #4579F5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 .lead-tracker #delete-btn {
-     background: #fff;
-     color: red;
-     border: 1px solid red;
-     border-radius: 5px;
+  background: linear-gradient(135deg, #675DF6, #9F6FF6);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
 }
 
 .lead-tracker ul {
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .lead-tracker li {
-    margin-top: 5px;
-    background: #f3f3f3b0;
-    padding: 8px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 8px;
+  background:  rgba(60, 51, 119, 0.92);
+  box-shadow: 0px 0px 4px rgb(255 255 255 / 12%);
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .lead-tracker li a {
-    color: #c73aff;
+  color: #ffffffbd;
 }
 
-.lead-tracker li #delete-item {
-    background-color: transparent;
+.lead-tracker li .delete-item-btn{
+    background: linear-gradient(135deg, #675DF6, #9F6FF6) !important;
+  border-radius: 100px;
+  font-size: 20px;
+    padding: 8px 14px;
 }
+
