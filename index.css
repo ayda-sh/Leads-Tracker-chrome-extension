@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 10px;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   min-width: 380px;
   background: rgba(60, 51, 119, 0.92);
 }
@@ -18,8 +18,13 @@ body {
   outline: none;
 }
 
+.lead-tracker input::placeholder {
+  font-size: 11px;
+  color: rgb(166, 166, 166);
+}
+
 .lead-tracker button {
-  background: linear-gradient(90deg, #62A2F7, #4579F5);
+  background: linear-gradient(90deg, #62a2f7, #4579f5);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -28,7 +33,7 @@ body {
 }
 
 .lead-tracker #delete-btn {
-  background: linear-gradient(135deg, #675DF6, #9F6FF6);
+  background: linear-gradient(135deg, #675df6, #9f6ff6);
   color: rgb(255, 255, 255);
   border-radius: 8px;
 }
@@ -41,7 +46,7 @@ body {
 
 .lead-tracker li {
   margin-top: 8px;
-  background:  rgba(60, 51, 119, 0.92);
+  background: rgba(60, 51, 119, 0.92);
   box-shadow: 0px 0px 4px rgb(255 255 255 / 12%);
   padding: 8px;
   border-radius: 8px;
@@ -54,10 +59,26 @@ body {
   color: #ffffffbd;
 }
 
-.lead-tracker li .delete-item-btn{
-    background: linear-gradient(135deg, #675DF6, #9F6FF6) !important;
+.lead-tracker li .delete-item-btn {
+  background: linear-gradient(135deg, #675df6, #9f6ff6) !important;
   border-radius: 100px;
-  font-size: 20px;
-    padding: 8px 14px;
+  padding: 9px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.lead-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.favicon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
